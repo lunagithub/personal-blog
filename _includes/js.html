@@ -200,7 +200,8 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
     new Hammer(page).on('swipeleft', function(event) {
       window.location.replace("{{site.baseurl}}{{paginator.next_page_path}}");
     });
-
+    {{paginator.next_page_path}}
+    {{paginator.previous_page_path}}
     new Hammer(page).on('swiperight', function(event) {
       window.location.replace("{{site.baseurl}}{{paginator.previous_page_path}}");
     });
