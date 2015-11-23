@@ -54,9 +54,9 @@ shuffle: Flase # Shuffle the lines.
 loop: False
 loop-count: 1 # Set False for infinite loop, or set any number for finite loop.
 type-speed: 4 # Default 10
-start-delay: 2000	# Default 200
-delete-delay: 50000	# Default 5000
-lines:			# You can add HTML Tags in the Text
+start-delay: 2000 # Default 200
+delete-delay: 50000 # Default 5000
+lines: # You can add HTML Tags in the Text
   - text: "Why so serious?"
 
 ########
