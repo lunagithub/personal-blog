@@ -168,7 +168,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
     var post = document.getElementById('post');
 
     new Hammer(post).on('swipeleft', function(event) {
-      {% if site.baseurl == "" and page.previous.url == "" %}
+      {% if site.baseurl == "" and page.previous == nil %}
         window.location.replace("/");
       {% else%}
         window.location.replace("{{site.baseurl}}{{page.previous.url}}");
