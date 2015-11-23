@@ -50,7 +50,7 @@ me-img: "/img/me.jpg"
 ##############################
 
 dynamic-typing: True
-shuffle: Flase	# Shuffle the lines.
+shuffle: Flase # Shuffle the lines.
 loop: False
 loop-count:	1 # Set False for infinite loop, or set any number for finite loop.
 type-speed:	4		# Default 10
