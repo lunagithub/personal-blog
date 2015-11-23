@@ -52,6 +52,14 @@ p {
     }
 }
 
+div {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -o-user-select: text;
+  user-select: text;
+}
+
 a {
     color: $primary;
     -webkit-transition: all .2s ease-in-out;
