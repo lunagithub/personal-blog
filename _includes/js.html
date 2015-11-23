@@ -168,7 +168,11 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
     var post = document.getElementById('post');
 
     new Hammer(post).on('swipeleft', function(event) {
-      window.location.replace("{{site.baseurl}}{{page.previous.url}}");
+      {% if site.baseurl == "" and page.previous.url == "" %}
+        window.location.replace("/");
+      {% else%}
+        window.location.replace("{{site.baseurl}}{{page.previous.url}}");
+      {% endif %}
     });
 
     new Hammer(post).on('swiperight', function(event) {
