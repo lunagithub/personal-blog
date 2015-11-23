@@ -169,17 +169,17 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
     new Hammer(post).on('swipeleft', function(event) {
       {% if site.baseurl == "" and page.previous == nil %}
-        window.location.replace("/");
+        document.location.replace("/");
       {% else%}
-        window.location.replace("{{site.baseurl}}{{page.previous.url}}");
+        document.location.replace("{{site.baseurl}}{{page.previous.url}}");
       {% endif %}
     });
 
     new Hammer(post).on('swiperight', function(event) {
       {% if site.baseurl == "" and page.next == nil %}
-        window.location.replace("/");
+        document.location.replace("/");
       {% else %}
-        window.location.replace("{{site.baseurl}}{{page.next.url}}");
+        document.location.replace("{{site.baseurl}}{{page.next.url}}");
       {% endif %}
     });
   </script>
@@ -199,16 +199,16 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
     new Hammer(page).on('swipeleft', function(event) {
       {% if site.baseurl == "" and paginator.next_page_path == "" %}
-        window.location.replace("/");
+        document.location.replace("/");
       {% else %}
-        window.location.replace("{{site.baseurl}}{{paginator.next_page_path}}");
+        document.location.replace("{{site.baseurl}}{{paginator.next_page_path}}");
       {% endif %}
     });
     new Hammer(page).on('swiperight', function(event) {
       {% if site.baseurl == "" and paginator.previous_page_path == "" %}
-        window.location.replace("/");
+        document.location.replace("/");
       {% else %}
-        window.location.replace("{{site.baseurl}}{{paginator.previous_page_path}}");
+        document.location.replace("{{site.baseurl}}{{paginator.previous_page_path}}");
       {% endif %}
     });
   </script>
