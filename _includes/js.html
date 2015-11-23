@@ -176,7 +176,11 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
     });
 
     new Hammer(post).on('swiperight', function(event) {
-      window.location.replace("{{site.baseurl}}{{page.next.url}}");
+      {% if site.baseurl == "" and page.next == nil %}
+        window.location.replace("/");
+      {% else %}
+        window.location.replace("{{site.baseurl}}{{page.next.url}}");
+      {% endif %}
     });
   </script>
 
