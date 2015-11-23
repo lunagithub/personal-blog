@@ -198,12 +198,18 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
     var page = document.getElementById('page');
 
     new Hammer(page).on('swipeleft', function(event) {
-      window.location.replace("{{site.baseurl}}{{paginator.next_page_path}}");
+      {% if site.baseurl == "" and paginator.next_page_path == "" %}
+        window.location.replace("/");
+      {% else %}
+        window.location.replace("{{site.baseurl}}{{paginator.next_page_path}}");
+      {% endif %}
     });
-    {{paginator.next_page_path}}
-    {{paginator.previous_page_path}}
     new Hammer(page).on('swiperight', function(event) {
-      window.location.replace("{{site.baseurl}}{{paginator.previous_page_path}}");
+      {% if site.baseurl == "" and paginator.previous_page_path == "" %}
+        window.location.replace("/");
+      {% else %}
+        window.location.replace("{{site.baseurl}}{{paginator.previous_page_path}}");
+      {% endif %}
     });
   </script>
 
