@@ -151,4 +151,3 @@ exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
 
 gems:
   - jekyll-paginate
-  - jemoji
