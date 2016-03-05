@@ -2,7 +2,7 @@
 layout: post
 section-type: post
 title: AES Encryption in Swift 2.0
-category: Category
+category: tech
 tags: [ 'ios', 'security' ]
 ---
 
