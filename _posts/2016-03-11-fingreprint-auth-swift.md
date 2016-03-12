@@ -16,3 +16,7 @@ That way you will be able to spawn the authentication when the devices is starti
 or while entering the foreground (from the background).
 
 <script src="https://gist.github.com/PanosSakkos/570c9afe0748176a952a.js"></script>
+
+And will look like this
+
+![misc](/img/posts/touch-id/touch-id.jpg)
