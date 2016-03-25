@@ -12,7 +12,7 @@ new handy features. Currently the repository counts 12 <a href="https://github.c
 The mission of { Personal } is to make the web more beautiful and secure, and version 6.0.0
 is on the right track :smile: 
 
-Version 6.0.0 contains bug fixes and the following features
+The new version contains bug fixes and the following features
 
 * Post categories <small>Thanks to <a href="https://github.com/bgoldman" target="blank">@bgoldman</a></small>
 * Author blurb bellow the posts <small>Thanks to <a href="https://github.com/bgoldman" target="blank">@bgoldman</a></small>
