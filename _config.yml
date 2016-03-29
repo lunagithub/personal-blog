@@ -46,17 +46,23 @@ background-img: "../img/opera.jpg"
 me-img: "/img/me.jpg"
 
 ##############################
+# Color the browser elements #
+##############################
+color-browser: "#000000"
+apple-status-bar-style: "black"
+
+##############################
 # Dynamic Text on the header #
 ##############################
 
 dynamic-typing: True
-shuffle: Flase	# Shuffle the lines.
+shuffle: Flase # Shuffle the lines.
 loop: False
-loop-count:	1 # Set False for infinite loop, or set any number for finite loop.
-type-speed:	4		# Default 10
-start-delay: 2000	# Default 200
-delete-delay: 50000	# Default 5000
-lines:			# You can add HTML Tags in the Text
+loop-count: 1 # Set False for infinite loop, or set any number for finite loop.
+type-speed: 4 # Default 10
+start-delay: 2000 # Default 200
+delete-delay: 50000 # Default 5000
+lines: # You can add HTML Tags in the Text
   - text: "Why so serious?"
 
 ########
@@ -67,13 +73,16 @@ post-preview-words: 96
 
 paginate: 5
 
+email-share: True
 fb-share: True
 twitter-share: True
-reddit-share: True
 linkedin-share: True
-pinterest-share: False
+reddit-share: True
 google-plus-share: True
-vkontakte-share: False
+tumblr-share: True
+pinterest-share: True
+pocket-share: True
+vkontakte-share: True
 
 disqus-shortname: "panossakkos"
 
@@ -102,7 +111,7 @@ events:
     description: "Bachelor studies @ <a href=\"http://www.di.uoa.gr/eng\" target=\"_blank\">Department of Informatics and Telecommunications</a> on Computer Science and Telecomunications"
 
 # First image of the Career timeline
-career-img: "/img/career/default.jpg"
+timeline-img: "/img/career/default.jpg"
 
 ##################
 # Contact layout #
